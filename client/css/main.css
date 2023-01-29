@@ -1,0 +1,47 @@
+/* 비주얼 */
+.visual {
+  width: 1920px;
+  height: 370px;
+  position: relative;
+  cursor: pointer;
+}
+
+.visual__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 비주얼 - 버튼 */
+.visual__container {
+  min-width: 1100px;
+  height: 370px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  padding: 0;
+  background: transparent;
+  width: 52px;
+  height: 52px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button img {
+  width: 100%;
+  height: 100%;
+}
+
+.button__left {
+  left: 350px;
+}
+
+.button__right {
+  right: 350px;
+}
