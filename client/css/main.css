@@ -50,6 +50,11 @@
 
 /* 스와이퍼 CSS */
 
+/* body {
+  max-width: 1050px;
+  
+} */
+
 .swiper {
   width: 1920px;
   height: 370px;
@@ -63,6 +68,7 @@
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.2);
   color: var(--white);
+  bottom: 20px;
 }
 
 .swiper-slide {
@@ -83,10 +89,16 @@
   align-items: center;
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .swiper-slide img {
-  display: block;
+  max-width: 100%;
+  min-width: 1050px;
   width: 100%;
-  height: 100%;
+  height: 370px;
   object-fit: cover;
 }
 
@@ -111,4 +123,9 @@
 
 .swiper-button-next::after, .swiper-button-prev::after {
   display: none;
+}
+
+.swiper__link {
+  display: inline-block;
+  width: 1920px;
 }
